@@ -1,4 +1,8 @@
 # You know the drill. Be root or a sudo user.
+# This Documentation has been tested successfully on both CentOS7.x and RHEL7.x.
+# In particulary, they are as follows.
+# CentOS Linux release 7.5.1804 (Core)
+# Red Hat Enterprise Linux Server release 7.6 (Maipo)
 
 # We will need this.
 yum groups install "Development Tools"

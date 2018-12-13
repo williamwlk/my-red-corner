@@ -1,0 +1,35 @@
+Issue
+
+GUI Login gets stuck. 
+If selinux is in 'Enforcing' mode, we probably need to make the version of Python that you just installed (i.e python3.6) work with the webcam
+
+Resolution
+
+- Please login to the console (Ctrl + Alt + F2) or something like that or ssh into it as you see fit.
+- Please then check as follows:
+ 
+#cat /var/log/messages | grep -E "sealert"
+...
+...
+...
+Dec 11 19:03:50 mycentos0 setroubleshoot: SELinux is preventing /usr/bin/python3.6 from map access on the chr_file /dev/video0. For complete SELinux messages run: sealert -l dede28c9-2999-48ec-88cd-a3eb4ddbde9e
+
+- Please run:
+
+#sealert -l dede28c9-2999-48ec-88cd-a3eb4ddbde9e
+
+- Or you can grab the raw denied messages as well.
+
+#cat /var/log/audit/audit.log | grep denied | tail
+...
+...
+...
+type=AVC msg=audit(1544531627.462:145): avc:  denied  { map } for  pid=7182 comm="python3" path="/dev/video0" dev="devtmpfs" ino=20165 scontext=system_u:system_r:xdm_t:s0-s0:c0.c1023 tcontext=system_u:object_r:v4l_device_t:s0 tclass=chr_file permissive=0
+
+- If the findings are affirmative, python3 clearly needs to get access to the character device file aka the web cam device.
+
+- We might need to generate a local policy module to allow this access by executing something like this, either as root or using sudo.
+
+# ausearch -c 'python3' --raw | audit2allow -M my-python3
+# semodule -i my-python3.pp
+

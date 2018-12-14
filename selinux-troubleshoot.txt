@@ -1,5 +1,8 @@
 # By williamwlk
 # December 14, 2018
+# Part of https://github.com/williamwlk/my-red-corner
+# Providing a helping hand for https://github.com/boltgolt/howdy
+# Especially on CentOS and RHEL
 
 Issue
 

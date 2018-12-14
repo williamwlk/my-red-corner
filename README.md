@@ -1,6 +1,7 @@
 # my-red-corner
-# Providing a helping hand for https://github.com/boltgolt/howdy 
-# Especially on CentOS and RHEL
+
+> Providing a helping hand for https://github.com/boltgolt/howdy 
+> Especially on CentOS and RHEL
 
 1. CentOS Linux or RHEL release 7.x (Server with GUI)
 - CentOS Linux release 7.5 
@@ -14,10 +15,12 @@
 
 Execute, either as root or using sudo:
 
+```sh
 ausearch -c 'python3' --raw | audit2allow -M my-python3
-
 semodule -i my-python3.pp
+```
 
 5. HOWDY :)
 
-# Pleaes refer to selinux-troubleshoot.txt for more information about SELinux.
+> Please refer to selinux-troubleshoot.txt for more information about SELinux.
+> Please refer to README_PAM.txt for more information about PAM.

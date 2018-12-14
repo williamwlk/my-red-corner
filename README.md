@@ -1,7 +1,10 @@
 # my-red-corner
+{: .gitlab-red}
 
-> Providing a helping hand for https://github.com/boltgolt/howdy 
+> Providing a helping hand for [howdy] (https://github.com/boltgolt/howdy)
 > Especially on CentOS and RHEL
+
+## Installation {1..5]
 
 1. CentOS Linux or RHEL release 7.x (Server with GUI)
 - CentOS Linux release 7.5 

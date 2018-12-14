@@ -1,5 +1,8 @@
 # By williamwlk
 # December 10, 2018
+# Part of https://github.com/williamwlk/my-red-corner
+# Providing a helping hand for https://github.com/boltgolt/howdy
+# Especially on CentOS and RHEL
 # You know the drill. Be root or a sudo user.
 # This Documentation has been tested successfully on both CentOS7.x and RHEL7.x.
 # In particulary, they are as follows.

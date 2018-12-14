@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # By williamwlk
 # December 10, 2018
+# Part of https://github.com/williamwlk/my-red-corner
+# Providing a helping hand for https://github.com/boltgolt/howdy
+# Especially on CentOS and RHEL
 # set -o errexit
 set -o pipefail
 set -o nounset

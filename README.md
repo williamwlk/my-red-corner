@@ -1,7 +1,6 @@
 # my-red-corner
-{: .gitlab-red}
 
-> Providing a helping hand for [howdy] (https://github.com/boltgolt/howdy)
+> Providing a helping hand for https://github.com/boltgolt/howdy
 > Especially on CentOS and RHEL
 
 ## Installation {1..5]

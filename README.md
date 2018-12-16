@@ -28,6 +28,6 @@ semodule -i my-python3.pp
 
 ## Notes
 
-> Please refer to selinux-troubleshoot.txt for more information about SELinux.
+> Please refer to [selinux-troubleshoot.txt](https://github.com/williamwlk/my-red-corner/blob/master/selinux-troubleshoot.txt) for more information about SELinux.
 
-> Please refer to README_PAM.txt for more information about PAM.
+> Please refer to [README_PAM.txt](https://github.com/williamwlk/my-red-corner/blob/master/README_PAM.txt) for more information about PAM.
